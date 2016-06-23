@@ -1,20 +1,16 @@
 
-/*import React,{
-    Component,
-    StyleSheet,
-    Image,
-} from 'react-native';*/
-
 import React, { Component } from 'react';
-import {
-  /*  Component,*/
+//solve : Super expression must either be null or a function, not undefined
+
+import{
     StyleSheet,
     Image,
 } from 'react-native';
 
-export default class Launcher extends Component {
 
-
+//export default
+class Launcher extends Component {
+    
     render() {
         return (
             <Image
@@ -25,7 +21,7 @@ export default class Launcher extends Component {
 
 }
 
-
+export default Launcher;
 
 
 const styles = StyleSheet.create({

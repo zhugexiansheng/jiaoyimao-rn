@@ -1,11 +1,10 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- */
 
-import React, {
+
+import React, { Component } from 'react';
+//solve : Super expression must either be null or a function, not undefined
+
+import {
     AppRegistry,
-    Component,
     Navigator,
 } from 'react-native';
 
