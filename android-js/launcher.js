@@ -7,15 +7,32 @@ import{
     Image,
 } from 'react-native';
 
+import Login from './login'
+
+const STAY_TIME = 1 * 1000;
 
 //export default
 class Launcher extends Component {
-    
+
+    constructor(props) {
+        super(props);
+        var {navigator} = props;
+        
+        setTimeout(() => {
+            navigator.replace({name: 'login', component: Login})
+        }, STAY_TIME)
+    }
+
     render() {
         return (
             <Image
+                style={
+                  {alignSelf: 'center',//水平居中
+                   marginTop: 50
+                  }
+                }
                 source={require('../images/itsme/ic_launcher.png')}
-                style={styles.backgroundImage}/>
+            />
         );
     }
 
@@ -24,13 +41,3 @@ class Launcher extends Component {
 export default Launcher;
 
 
-const styles = StyleSheet.create({
-    backgroundImage: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: null,
-        height: null,
-        resizeMode: 'cover'
-    }
-});
