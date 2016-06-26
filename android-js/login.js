@@ -9,7 +9,9 @@ import{
     View
 } from 'react-native';
 
-//var TouchableWithoutFeedback = require('TouchableWithoutFeedback');
+
+const ItemMarginTop = 20;
+
 
 var ViewBorderStyleExample = React.createClass({
 
@@ -23,13 +25,13 @@ var ViewBorderStyleExample = React.createClass({
         return (
             <TouchableWithoutFeedback onPress={this._handlePress}>
                 <View>
-                    <View style={{marginTop: 5,borderWidth: 1,borderRadius: 5,borderStyle: this.state.showBorder ? 'dotted' : null,padding: 5 }}>
+                    <View style={{marginTop: ItemMarginTop,borderWidth: 1,borderRadius: 5,borderStyle: this.state.showBorder ? 'dotted' : null,padding: 5 }}>
                         <Text style={{fontSize: 11}}>Dotted border style</Text>
                     </View>
-                    <View style={{marginTop: 5,borderWidth: 1,borderRadius: 5,borderStyle: this.state.showBorder ? 'dotted' : null,padding: 5 }}>
+                    <View style={{marginTop: ItemMarginTop,borderWidth: 1,borderRadius: 5,borderStyle: this.state.showBorder ? 'dotted' : null,padding: 5 }}>
                         <Text style={{fontSize: 11}}>Dotted border style</Text>
                     </View>
-                    <View style={{marginTop: 5,borderWidth: 1,borderRadius: 5,borderStyle: this.state.showBorder ? 'dotted' : null,padding: 5 }}>
+                    <View style={{marginTop: ItemMarginTop,borderWidth: 1,borderRadius: 5,borderStyle: this.state.showBorder ? 'dotted' : null,padding: 5 }}>
                         <Text style={{fontSize: 11}}>Dotted border style</Text>
                     </View>
                 </View>
@@ -58,43 +60,4 @@ export default class Login extends Component{
 }
 
 
-/* <View style={{width:70}}>
- <Image source={require('../images/itsme/ic_launcher.png')} style={{alignSelf:'center',width:45,height:45}} />
- <Text style={{marginTop:5,alignSelf:'center',fontSize:11,color:'#555555',textAlign:'center'}}>电影</Text>
- </View>
- <View style={{width:70}}>
- <Image source={require('../images/itsme/ic_launcher.png')} style={{alignSelf:'center',width:45,height:45}} />
- <Text style={{marginTop:5,alignSelf:'center',fontSize:11,color:'#555555',textAlign:'center'}}>酒店</Text>
- </View>
- <View style={{width:70}}>
- <Image source={require('../images/itsme/ic_launcher.png')} style={{alignSelf:'center',width:45,height:45}} />
- <Text style={{marginTop:5,alignSelf:'center',fontSize:11,color:'#555555',textAlign:'center'}}>KTV</Text>
- </View>
- <View style={{width:70}}>
- <Image source={require('../images/itsme/ic_launcher.png')} style={{alignSelf:'center',width:45,height:45}} />
- <Text style={{marginTop:5,alignSelf:'center',fontSize:11,color:'#555555',textAlign:'center'}}>外卖</Text>
- </View>*/
-
-/*   <View style={{flexDirection:'row',marginTop:10}}>
- <View style={{width:70}}>
- <Image source={require('../images/itsme/ic_launcher.png')} style={{alignSelf:'center',width:45,height:45}} />
- <Text style={{marginTop:5,textAlign:'center',fontSize:11,color:'#555555'}}>优惠买单</Text>
- </View>
- <View style={{width:70}}>
- <Image source={require('../images/itsme/ic_launcher.png')} style={{alignSelf:'center',width:45,height:45}} />
- <Text style={{marginTop:5,alignSelf:'center',fontSize:11,color:'#555555',textAlign:'center'}}>周边游</Text>
- </View>
- <View style={{width:70}}>
- <Image source={require('../images/itsme/ic_launcher.png')} style={{alignSelf:'center',width:45,height:45}} />
- <Text style={{marginTop:5,alignSelf:'center',fontSize:11,color:'#555555',textAlign:'center'}}>休闲娱乐</Text>
- </View>
- <View style={{width:70}}>
- <Image source={require('../images/itsme/ic_launcher.png')} style={{alignSelf:'center',width:45,height:45}} />
- <Text style={{marginTop:5,alignSelf:'center',fontSize:11,color:'#555555',textAlign:'center'}}>今日新单</Text>
- </View>
- <View style={{width:70}}>
- <Image source={require('../images/itsme/ic_launcher.png')} style={{alignSelf:'center',width:45,height:45}} />
- <Text style={{marginTop:5,alignSelf:'center',fontSize:11,color:'#555555',textAlign:'center'}}>丽人</Text>
- </View>
- </View>*/
 
