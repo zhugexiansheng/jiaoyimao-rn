@@ -11,6 +11,7 @@ import{
 
 
 const ItemMarginTop = 20;
+const ItemPadding = 30;
 
 
 var ViewBorderStyleExample = React.createClass({
@@ -25,14 +26,15 @@ var ViewBorderStyleExample = React.createClass({
         return (
             <TouchableWithoutFeedback onPress={this._handlePress}>
                 <View>
-                    <View style={{marginTop: ItemMarginTop,borderWidth: 1,borderRadius: 5,borderStyle: this.state.showBorder ? 'dotted' : null,padding: 5 }}>
-                        <Text style={{fontSize: 11}}>Dotted border style</Text>
+                    <View style={{marginTop: ItemMarginTop,borderWidth: 1,borderRadius: 5,borderStyle: this.state.showBorder ? 'dotted' : null, flexDirection: 'row', marginHorizontal: 40 }}>
+                        <Image source={require('../images/itsme/facebook_icon_login.png')} style={{width:45,height:45}} />
+                        <Text style={{fontSize: 11, marginLeft: 50, textAlignVertical:'center'}}>facebook</Text>
                     </View>
-                    <View style={{marginTop: ItemMarginTop,borderWidth: 1,borderRadius: 5,borderStyle: this.state.showBorder ? 'dotted' : null,padding: 5 }}>
-                        <Text style={{fontSize: 11}}>Dotted border style</Text>
+                    <View style={{marginTop: ItemMarginTop,borderWidth: 1,borderRadius: 5,borderStyle: this.state.showBorder ? 'dotted' : null}}>
+                        <Text style={{fontSize: 11}}>twitter</Text>
                     </View>
-                    <View style={{marginTop: ItemMarginTop,borderWidth: 1,borderRadius: 5,borderStyle: this.state.showBorder ? 'dotted' : null,padding: 5 }}>
-                        <Text style={{fontSize: 11}}>Dotted border style</Text>
+                    <View style={{marginTop: ItemMarginTop,borderWidth: 1,borderRadius: 5,borderStyle: this.state.showBorder ? 'dotted' : null}}>
+                        <Text style={{fontSize: 11}}>email</Text>
                     </View>
                 </View>
             </TouchableWithoutFeedback>
