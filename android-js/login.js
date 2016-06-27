@@ -10,8 +10,29 @@ import{
 } from 'react-native';
 
 
-const ItemMarginTop = 20;
-const ItemPadding = 30;
+const styles = StyleSheet.create({
+    itemView: {
+        marginTop: 20,
+        borderWidth: 1,
+        borderRadius: 20,
+        borderStyle: null,
+        flexDirection: 'row',
+        marginHorizontal: 40,
+        paddingTop: 10,
+        paddingBottom: 10,
+        paddingLeft: 20
+    },
+    iconImage: {
+        width:35,
+        height:35
+    },
+    iconText:{
+        fontSize: 21,
+        marginLeft: 75,
+        textAlignVertical:'center',
+        alignSelf: 'center',
+    }
+});
 
 
 var ViewBorderStyleExample = React.createClass({
@@ -26,15 +47,17 @@ var ViewBorderStyleExample = React.createClass({
         return (
             <TouchableWithoutFeedback onPress={this._handlePress}>
                 <View>
-                    <View style={{marginTop: ItemMarginTop,borderWidth: 1,borderRadius: 5,borderStyle: this.state.showBorder ? 'dotted' : null, flexDirection: 'row', marginHorizontal: 40 }}>
-                        <Image source={require('../images/itsme/facebook_icon_login.png')} style={{width:45,height:45}} />
-                        <Text style={{fontSize: 11, marginLeft: 50, textAlignVertical:'center'}}>facebook</Text>
+                    <View style={styles.itemView}>
+                        <Image source={require('../images/itsme/facebook_icon_login.png')} style={styles.iconImage} />
+                        <Text style={styles.iconText}>facebook</Text>
                     </View>
-                    <View style={{marginTop: ItemMarginTop,borderWidth: 1,borderRadius: 5,borderStyle: this.state.showBorder ? 'dotted' : null}}>
-                        <Text style={{fontSize: 11}}>twitter</Text>
+                    <View style={styles.itemView}>
+                        <Image source={require('../images/itsme/twitter_icon_login.png')} style={styles.iconImage} />
+                        <Text style={styles.iconText}>twitter</Text>
                     </View>
-                    <View style={{marginTop: ItemMarginTop,borderWidth: 1,borderRadius: 5,borderStyle: this.state.showBorder ? 'dotted' : null}}>
-                        <Text style={{fontSize: 11}}>email</Text>
+                    <View style={styles.itemView}>
+                        <Image source={require('../images/itsme/email_icon_login.png')} style={styles.iconImage} />
+                        <Text style={styles.iconText}>email</Text>
                     </View>
                 </View>
             </TouchableWithoutFeedback>
