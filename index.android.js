@@ -8,21 +8,17 @@ import {
     Navigator
 } from 'react-native';
 
-import Launcher from './android-js/launcher';
+import Launcher from './public/pages/launcher.js';
 
 class AwesomeProject extends Component {
 
   render() {
-      var defaultName = 'launcher';
-      var defaultComponent = Launcher;
+      let defaultName = 'launcher';
+      let defaultComponent = Launcher;
       
       return (
             <Navigator
                 initialRoute={{ name: defaultName, component: defaultComponent }}//默认的页面
-
-                configureScene={(route) => {//页面之间跳转时候的动画
-                        return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
-                    }}
 
 
                 //route里其实就是我们传递的name,component这两个货
