@@ -20,9 +20,9 @@ import LoginEmail from "./loginEmail.page.js";
 const showOrNot = true;
 const IMAGES = {
   LOGO: require("../images/login_app_icon.png"),
-  FACEBOOK: require("../images/tw__ic_logo_white.png"),
-  TWITTER: require("../images/tw__ic_logo_white.png"),
-  EMAIL: require("../images/tw__ic_logo_white.png"),
+  FACEBOOK: require("../images/login_icon_facebook.png"),
+  TWITTER: require("../images/login_icon_twitter.png"),
+  EMAIL: require("../images/login_icon_email.png"),
 }
 
 export default class LoginPage extends Component{
